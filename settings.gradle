@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Bomin_project"

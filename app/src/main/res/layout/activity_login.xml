@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="LOGIN"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
+        ></TextView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@mipmap/ic_launcher"
+        android:layout_gravity="center"
+        ></ImageView>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        ></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        ></EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:text="로그인"
+        ></Button>
+
+
+    <TextVeiw
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="or"
+        ></TextVeiw>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:text="기존 공유 킥보드 계정으로 로그인"
+        ></Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        >
+        <TextVeiw
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="5"
+            android:text="Find Password"
+            android:textSize="24sp"
+            ></TextVeiw>
+
+        <TextVeiw
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="5"
+            android:text="Sign in"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="24sp"
+            ></TextVeiw>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
