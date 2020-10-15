@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         TextInputEditText_email = findViewById(R.id.TextInputEditText_email);
         TextInputEditText_password = findViewById(R.id.TextInputEditText_password);
-
+/*
         public void onClick(View v){
             String email = TextInputEditText_email.getText().toString();
             String password = TextInputEditText_password.getText().toString();
@@ -29,5 +29,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
 
         }
+        */
+
     }
 }
