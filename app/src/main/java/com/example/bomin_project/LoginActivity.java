@@ -48,7 +48,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String UserEmail = login_email.getText().toString();
                 String UserPwd = login_password.getText().toString();
-                Log.v("로그인","로그인");
+                Log.v("로그인","로그인 버튼 활성화");
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
