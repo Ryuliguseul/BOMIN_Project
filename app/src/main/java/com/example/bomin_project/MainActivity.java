@@ -1,35 +1,53 @@
 package com.example.bomin_project;
 
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
-import android.os.Bundle;
-import com.google.android.material.textfield.TextInputEditText;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextInputEditText TextInputEditText_email, TextInputEditText_password;
-    private Object View;
+    private static final String TAG = "MAIN";
+    private TextView tv;
+    private RequestQueue queue;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_main);
+        tv = findViewById(R.id.tvMain);
+        queue = Volley.newRequestQueue(this);
+        String url = "http://www.google.com";
+        Log.v("test","test");
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                tv.setText(response);
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
 
-        TextInputEditText_email = findViewById(R.id.TextInputEditText_email);
-        TextInputEditText_password = findViewById(R.id.TextInputEditText_password);
-/*
-        public void onClick(View v){
-            String email = TextInputEditText_email.getText().toString();
-            String password = TextInputEditText_password.getText().toString();
+            }
+        });
 
-            Intent intent = new Intent(MainActivity.this, LoginResultActivity.class);
-            intent.putExtra("email", email);
-            intent.putExtra("password", password);
-            startActivity(intent);
+        stringRequest.setTag(TAG);
+        queue.add(stringRequest);
+    }
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+        if (queue != null) {
+            queue.cancelAll(TAG);
         }
-        */
-
     }
 }
