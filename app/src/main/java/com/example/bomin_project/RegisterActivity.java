@@ -71,7 +71,7 @@ public class RegisterActivity extends AppCompatActivity {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
                                 dialog = builder.setMessage("사용할 수 있는 아이디입니다.").setPositiveButton("확인", null).create();
                                 dialog.show();
-                                join_email.setEnabled(false); //아이디값 고정
+                                join_email.setEnabled(false);
                                 validate = true; //검증 완료
                                 check_button.setBackgroundColor(getResources().getColor(R.color.colorGray));
                             }
