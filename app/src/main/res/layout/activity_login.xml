@@ -17,6 +17,7 @@
         android:layout_marginBottom="16dp"
         android:gravity="center"
         android:text="LOGIN"
+        android:fontFamily="@font/default_font"
         android:textColor="@android:color/holo_blue_dark"
         android:textSize="24sp"
         ></TextView>
@@ -34,11 +35,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp">
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/login_email"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="Email">
+            android:hint="Email"
+            android:fontFamily="@font/default_font">
         </com.google.android.material.textfield.TextInputEditText>
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -51,7 +54,8 @@
             android:id="@+id/login_password"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="password">
+            android:hint="password"
+            android:fontFamily="@font/default_font">
         </com.google.android.material.textfield.TextInputEditText>
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -63,7 +67,9 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/button"
         android:text="로그인"
+        android:fontFamily="@font/default_font"
         android:textColor="#ffffff"
+        android:textSize="20sp"
         ></Button>
 
 
@@ -72,13 +78,16 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_marginBottom="16dp"
+        android:fontFamily="@font/default_font"
         android:text="Or"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="58dp"
         android:layout_marginBottom="16dp"
-        android:text="기존 공유 킥보드 계정으로 로그인"
+        android:fontFamily="@font/default_font"
+        android:text="카카오톡 로그인"
+        android:textSize="20sp"
         android:background="@drawable/button"
         android:textColor="#ffffff"
         ></Button>
@@ -95,6 +104,7 @@
             android:gravity="center"
             android:layout_weight="5"
             android:text="Find Password"
+            android:fontFamily="@font/default_font"
             android:textSize="24sp"
             ></TextView>
         <Button
@@ -104,6 +114,7 @@
             android:gravity="center"
             android:layout_weight="5"
             android:text="Join"
+            android:fontFamily="@font/default_font"
             android:textColor="@android:color/holo_blue_dark"
             android:textSize="24sp"
             ></Button>

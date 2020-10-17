@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -18,6 +19,9 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
 public class RegisterActivity extends AppCompatActivity {
 
     private EditText join_email, join_password, join_name, join_pwck;
@@ -27,6 +31,8 @@ public class RegisterActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_join );
 
@@ -99,9 +105,9 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 final String UserEmail = join_email.getText().toString();
-                final String UserPwd = join_password.getText().toString();
+                final String UserPwd = hashing(join_password.getText().toString());
                 final String UserName = join_name.getText().toString();
-                final String PassCk = join_pwck.getText().toString();
+                final String PassCk = hashing(join_pwck.getText().toString());
 
 
                 //아이디 중복체크 했는지 확인
@@ -131,7 +137,7 @@ public class RegisterActivity extends AppCompatActivity {
                             //회원가입 성공시
                             if(UserPwd.equals(PassCk)) {
                                 if (success) {
-
+                                    Log.d("process check", "회원가입 성공");
                                     Toast.makeText(getApplicationContext(), String.format("%s님 가입을 환영합니다.", UserName), Toast.LENGTH_SHORT).show();
                                     Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
                                     startActivity(intent);
@@ -162,4 +168,24 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
     }
+
+    public String hashing(String str) {
+        String result;
+        try {
+            MessageDigest sh = MessageDigest.getInstance("SHA-256");
+            sh.update(str.getBytes());
+            byte byteData[] = sh.digest();
+            StringBuffer sb = new StringBuffer();
+            for (int i = 0; i < byteData.length; i++) {
+                sb.append(Integer.toString(byteData[i] & 0xff + 0x100, 16).substring(1));
+            }
+            result = sb.toString();
+        } catch(NoSuchAlgorithmException e) {
+            e.printStackTrace();
+            result = null;
+        }
+
+        return result;
+    }
 }
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tmp6">
+
+    <Button
+        android:id="@+id/next1"
+        android:layout_width="421dp"
+        android:layout_height="706dp"
+        android:background="#00ff0000"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="16dp">
+
+    </Button>
+</androidx.constraintlayout.widget.ConstraintLayout>

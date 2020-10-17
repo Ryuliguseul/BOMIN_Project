@@ -1,7 +1,11 @@
 package com.example.bomin_project;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,39 +19,36 @@ import com.android.volley.toolbox.Volley;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String TAG = "MAIN";
-    private TextView tv;
-    private RequestQueue queue;
-
+    Button three, myinsure;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        tv = findViewById(R.id.tvMain);
-        queue = Volley.newRequestQueue(this);
-        String url = "http://www.google.com";
-        Log.v("test","test");
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
-            @Override
-            public void onResponse(String response) {
-                tv.setText(response);
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
 
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+
+
+        Log.d("check", "MainActivity 진입");
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.tmp1);
+        three  = findViewById(R.id.three);
+        three.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(getApplicationContext(), tmp.class);
+                startActivity(intent1);
             }
         });
 
-        stringRequest.setTag(TAG);
-        queue.add(stringRequest);
-    }
+        myinsure  = findViewById(R.id.myinsure);
+        myinsure.setOnClickListener(new View.OnClickListener(){
 
-    @Override
-    protected void onStop() {
-        super.onStop();
-        if (queue != null) {
-            queue.cancelAll(TAG);
-        }
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(getApplicationContext(), tmp2.class);
+                startActivity(intent2);
+            }
+        });
     }
 }
