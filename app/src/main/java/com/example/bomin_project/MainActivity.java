@@ -5,21 +5,12 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.Button;
-import android.widget.TextView;
+import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
-
 public class MainActivity extends AppCompatActivity {
 
-    Button three, myinsure;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -30,24 +21,25 @@ public class MainActivity extends AppCompatActivity {
 
         Log.d("check", "MainActivity 진입");
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.tmp1);
-        three  = findViewById(R.id.three);
-        three.setOnClickListener(new View.OnClickListener(){
 
+        setContentView(R.layout.activity_main);
+        LinearLayout product1 = (LinearLayout) findViewById (R.id.product1);
+        product1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1 = new Intent(getApplicationContext(), tmp.class);
-                startActivity(intent1);
+                Intent intent = new Intent(getApplicationContext(), ProductDetail.class);
+                intent.putExtra("product", 1);
+                startActivity(intent);
             }
         });
 
-        myinsure  = findViewById(R.id.myinsure);
-        myinsure.setOnClickListener(new View.OnClickListener(){
-
+        LinearLayout product2 = (LinearLayout) findViewById (R.id.product2);
+        product2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(getApplicationContext(), tmp2.class);
-                startActivity(intent2);
+                Intent intent = new Intent(getApplicationContext(), ProductDetail.class);
+                intent.putExtra("product", 2);
+                startActivity(intent);
             }
         });
     }

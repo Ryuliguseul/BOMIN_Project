@@ -29,11 +29,9 @@
         </activity>
         <activity android:name=".RegisterActivity"></activity>
 
-    <activity android:name=".tmp"></activity>
-
-<activity android:name=".tmp2"></activity>
-
-<activity android:name=".tmp3"></activity>
+    <activity android:name=".ProductDetail"></activity>
+    <activity android:name=".Payment"></activity>
+    <activity android:name=".TermsConditions"></activity>
         <activity android:name=".tmp4"></activity>
         <activity android:name=".tmp5"></activity>
     </application>

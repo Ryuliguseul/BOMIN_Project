@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#444444"
+        android:textSize="24sp"
+
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="20dp"
+
+        android:text="가입 전,\n약관을 꼭 확인해주세요."
+        android:fontFamily="@font/default_font"
+        >
+    </TextView>
+    
+    <Button
+        android:id="@+id/terms"
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="28dp"
+        android:layout_gravity="center"
+        android:background="@drawable/term_layout"
+        android:textSize = "15sp"
+        android:textColor="#444444"
+        android:text="퍼스널 모빌리티 개인간 보험 이용 약관         >"
+        android:fontFamily="@font/default_font"></Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="291dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="#444444"
+        android:text="이용 기간 동안 무사고 시,\n플랫폼 이용료를 제외한 보험료가 환급됩니다."
+        android:fontFamily="@font/font_regular"></TextView>
+    
+    <Button
+        android:id="@+id/join"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center"
+        android:text="가입하기"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/default_font"></Button>
+
+</LinearLayout>

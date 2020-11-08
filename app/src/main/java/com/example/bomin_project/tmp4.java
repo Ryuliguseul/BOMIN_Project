@@ -16,7 +16,7 @@ public class tmp4 extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.tmp5);
+        setContentView(R.layout.activity_payment);
         next1  = findViewById(R.id.next1);
         next1.setOnClickListener(new View.OnClickListener(){
 
