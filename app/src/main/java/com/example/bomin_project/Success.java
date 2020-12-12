@@ -6,7 +6,9 @@ import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.volley.RequestQueue;
@@ -15,10 +17,8 @@ import com.android.volley.toolbox.Volley;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import java.text.SimpleDateFormat;
-import java.util.*;
 
-public class Payment extends AppCompatActivity {
+public class Success extends AppCompatActivity {
 
     Button join;
     USER user;
@@ -28,16 +28,14 @@ public class Payment extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_payment);
+        setContentView(R.layout.activity_success);
 
         Intent intent = getIntent();
         user = (USER) intent.getSerializableExtra("User");
         product_index = intent.getIntExtra("Product", 0);
 
-        //입금 확인이나 신용카드 결제 관련 로직 필요//
-        Log.d("check", "Payment");
+        Log.d("check", "success");
 
-        //PRODUCT UPDATE
         //user info update -> current product
         Response.Listener<String> responseListener = new Response.Listener<String>() {
             @Override
@@ -46,7 +44,6 @@ public class Payment extends AppCompatActivity {
                 try {
                     JSONObject jsonObject = new JSONObject( response );
                     boolean success = jsonObject.getBoolean( "success" );
-                    Log.d("check", "ProductUser Update");
 
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -54,27 +51,21 @@ public class Payment extends AppCompatActivity {
 
             }
         };
-
-        String name = user.getName();
         String email = user.getEmail();
 
-        long now = System.currentTimeMillis();
-        Date mDate = new Date(now);
-        SimpleDateFormat simpleDate = new SimpleDateFormat("yyyyMMdd");
-        String date = simpleDate.format(mDate);
-
-        ProductUserUpdateRequest updateRequest = new ProductUserUpdateRequest(name, email, product_index, date, responseListener);
-        RequestQueue queue = Volley.newRequestQueue( Payment.this );
+        UpdateRequest updateRequest = new UpdateRequest(email,product_index, responseListener);
+        RequestQueue queue = Volley.newRequestQueue( Success.this );
         queue.add( updateRequest );
+
 
         join  = findViewById(R.id.join);
         join.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Success.class);
+                Log.d("check", "여길 오긴 하는건가");
+                Intent intent = new Intent(getApplicationContext(), Insurance.class);
                 intent.putExtra("User", user);
-                intent.putExtra("Product", product_index);
                 startActivity(intent);
             }
         });

@@ -1,57 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/colorBackground">
+    android:layout_margin="20dp"
+    android:orientation="vertical">
 
-    <TextView
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#444444"
-        android:textSize="24sp"
+        android:layout_marginTop="70dp"
+        android:padding="3dp">
 
-        android:layout_marginTop="48dp"
-        android:layout_marginLeft="20dp"
+        <CheckBox
+            android:id="@+id/check1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="보험 안내서"></CheckBox>
 
-        android:text="가입 전,\n약관을 꼭 확인해주세요."
-        android:fontFamily="@font/default_font"
-        >
-    </TextView>
-    
-    <Button
-        android:id="@+id/terms"
-        android:layout_width="320dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="28dp"
-        android:layout_gravity="center"
-        android:background="@drawable/term_layout"
-        android:textSize = "15sp"
-        android:textColor="#444444"
-        android:text="퍼스널 모빌리티 개인간 보험 이용 약관         >"
-        android:fontFamily="@font/default_font"></Button>
 
-    <TextView
+        <Button
+            android:id="@+id/show1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/edge"
+            android:gravity="center"
+            android:text="약관 보기" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="291dp"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:textSize="15sp"
-        android:textColor="#444444"
-        android:text="이용 기간 동안 무사고 시,\n플랫폼 이용료를 제외한 보험료가 환급됩니다."
-        android:fontFamily="@font/font_regular"></TextView>
-    
-    <Button
-        android:id="@+id/join"
-        android:layout_width="320dp"
-        android:layout_height="50dp"
-        android:background="@drawable/button"
-        android:layout_marginTop="24dp"
-        android:layout_gravity="center"
-        android:text="가입하기"
-        android:textSize="15sp"
-        android:textColor="#ffffff"
-        android:fontFamily="@font/default_font"></Button>
+        android:layout_marginTop="20dp"
+        android:padding="3dp">
 
+        <CheckBox
+            android:id="@+id/check2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="개인정보취급약관 동의">
+
+
+        </CheckBox>
+
+
+        <Button
+            android:id="@+id/show2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:background="@drawable/edge"
+            android:text="약관 보기" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorGray"></LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="3dp">
+
+        <CheckBox
+            android:id="@+id/check3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="모두 동의"></CheckBox>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom = "true"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity = "center"
+                android:layout_marginBottom = "24dp"
+                android:gravity = "center"
+                android:textSize="15sp"
+                android:textColor="#444444"
+                android:text="이용 기간 동안 무사고 시,\n최소 80% 이상의 보험료가 환급됩니다."
+                android:fontFamily="@font/font_regular"></TextView>
+            <Button
+                android:id="@+id/join"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom = "28dp"
+                android:background="@drawable/button"
+                android:layout_gravity = "center"
+
+                android:text="가입하기"
+                android:textSize="15sp"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/default_font"></Button>
+        </LinearLayout>
+
+    </RelativeLayout>
 </LinearLayout>

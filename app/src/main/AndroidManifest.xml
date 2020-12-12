@@ -16,9 +16,8 @@
 
         >
         <uses-library android:name="org.apache.http.legacy" android:required="false" />
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".Insurance"></activity>
+        <activity android:name=".MainActivity"></activity>
 
         <activity android:name=".LoginActivity">
             <intent-filter>
@@ -30,10 +29,11 @@
         <activity android:name=".RegisterActivity"></activity>
 
     <activity android:name=".ProductDetail"></activity>
+        <activity android:name=".ShowTerms"></activity>
     <activity android:name=".Payment"></activity>
     <activity android:name=".TermsConditions"></activity>
-        <activity android:name=".tmp4"></activity>
-        <activity android:name=".tmp5"></activity>
+        <activity android:name=".Success"></activity>
+        <activity android:name=".Mypage"></activity>
     </application>
 
 </manifest>

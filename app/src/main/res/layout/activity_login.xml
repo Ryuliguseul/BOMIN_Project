@@ -55,6 +55,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:hint="password"
+            android:inputType="textPassword"
             android:fontFamily="@font/default_font">
         </com.google.android.material.textfield.TextInputEditText>
 

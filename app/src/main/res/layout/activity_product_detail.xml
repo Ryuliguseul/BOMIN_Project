@@ -21,7 +21,7 @@
 
     <LinearLayout
         android:layout_width="320dp"
-        android:layout_height="240dp"
+        android:layout_height="260dp"
         android:background="@drawable/product_layout"
         android:layout_gravity="center"
         android:layout_marginTop="35dp"
@@ -48,24 +48,22 @@
             </TextView>
 
             <TextView
+                android:id="@+id/price"
                 android:layout_width="wrap_content"
                 android:layout_height="27dp"
-
                 android:layout_marginTop="16dp"
                 android:layout_marginLeft="110dp"
-
-
-                android:text="30,000원"
+                android:text="8,000원"
+                android:textColor = "#444444"
                 android:fontFamily="@font/default_font"
                 >
 
             </TextView>
             <TextView
+                android:id="@+id/term"
                 android:layout_width="wrap_content"
                 android:layout_height="27dp"
-
                 android:layout_marginTop="17dp"
-
                 android:text="/1달"
                 android:fontFamily="@font/font_regular"
                 >
@@ -82,7 +80,7 @@
             android:layout_marginTop="52dp"
             android:layout_marginLeft="16dp"
 
-            android:text="대인배상"
+            android:text="본인 신체 상해"
             android:fontFamily="@font/default_font">
         </TextView>
         <TextView
@@ -92,7 +90,7 @@
             android:textSize="15sp"
             android:layout_marginLeft="16dp"
 
-            android:text="다른 사람에게 입힌 피해를 보상합니다.\n(사망, 부상, 후유장애 등)"
+            android:text="상해 1급 ~ 12급까지\n보험금 최대 120만원 지급"
             android:fontFamily="@font/font_regular">
         </TextView>
         <TextView
@@ -100,34 +98,55 @@
             android:layout_height="wrap_content"
             android:textColor="#444444"
             android:textSize="15sp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="10dp"
             android:layout_marginLeft="16dp"
 
-            android:text="최소 2천~최대 1억 5천만원까지"
+            android:text="PM 기기 보상"
             android:fontFamily="@font/default_font">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#444444"
+            android:textSize="15sp"
+            android:layout_marginLeft="16dp"
+
+            android:text="최대 100만원 지급"
+            android:fontFamily="@font/font_regular">
         </TextView>
     </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="165dp"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:textSize="15sp"
-        android:textColor="#444444"
-        android:text="이용 기간 동안 무사고 시,\n플랫폼 이용료를 제외한 보험료가 환급됩니다."
-        android:fontFamily="@font/font_regular"></TextView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom = "true"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity = "center"
+                android:layout_marginBottom = "24dp"
+                android:gravity = "center"
+                android:textSize="15sp"
+                android:textColor="#444444"
+                android:text="이용 기간 동안 무사고 시,\n최소 80% 이상의 보험료가 환급됩니다."
+                android:fontFamily="@font/font_regular"></TextView>
+            <Button
+                android:id="@+id/join"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom = "28dp"
+                android:background="@drawable/button"
+                android:layout_gravity = "center"
 
-    <Button
-        android:id="@+id/join"
-        android:layout_width="320dp"
-        android:layout_height="50dp"
-        android:background="@drawable/button"
-        android:layout_marginTop="24dp"
-        android:layout_gravity="center"
-        android:text="가입하기"
-        android:textSize="15sp"
-        android:textColor="#ffffff"
-        android:fontFamily="@font/default_font"></Button>
+                android:text="가입하기"
+                android:textSize="15sp"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/default_font"></Button>
+        </LinearLayout>
+
+    </RelativeLayout>
 </LinearLayout>

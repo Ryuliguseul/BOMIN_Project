@@ -59,7 +59,7 @@
                 android:layout_marginTop="17dp"
                 android:layout_marginLeft="105dp"
 
-
+                android:textColor = "#444444"
                 android:text="30,000원"
                 android:fontFamily="@font/default_font"
                 >
@@ -85,6 +85,7 @@
             android:layout_marginTop="32dp"
             android:layout_marginLeft="16dp"
 
+            android:textColor = "#444444"
             android:text="정해진 기간 동안 안심하고 이용하세요!"
             android:fontFamily="@font/font_regular"
             >
@@ -92,8 +93,6 @@
 
 
     </LinearLayout>
-
-
 
     <LinearLayout
         android:id="@+id/product2"
@@ -135,6 +134,7 @@
 
 
                 android:text="200원"
+                android:textColor = "#444444"
                 android:fontFamily="@font/default_font"
                 >
 
@@ -158,19 +158,112 @@
 
             android:layout_marginTop="32dp"
             android:layout_marginLeft="16dp"
-
+            android:textColor = "#444444"
             android:text="저렴한 가격으로 부담없이 이용하세요!"
             android:fontFamily="@font/font_regular"
             >
         </TextView>
 
+//menu
 
     </LinearLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="match_parent"
         android:orientation="horizontal">
 
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/colorWhite"
+            android:weightSum="3"
+            android:layout_alignParentBottom = "true">
+
+            <LinearLayout
+                android:id="@+id/insurance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight = "1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+                android:clickable="true"
+                >
+                <ImageView
+                    android:src="@drawable/insurance"
+                    android:layout_marginTop="9dp"
+                    android:layout_height="24dp"
+                    android:layout_width="24dp">
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text = "보험 가입"
+                    android:fontFamily="@font/font_regular"
+                    android:textSize="12sp">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/myinsure"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight = "1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+                android:clickable="true"
+                >
+                <ImageView
+                    android:src="@drawable/myinsure"
+                    android:layout_marginTop="9dp"
+                    android:layout_height="24dp"
+                    android:layout_width="24dp">
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text = "나의 보험"
+                    android:fontFamily="@font/font_regular"
+                    android:textSize="12sp">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mypage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight = "1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+                android:clickable="true"
+                >
+                <ImageView
+                    android:src="@drawable/mypage"
+                    android:layout_marginTop="9dp"
+                    android:layout_height="24dp"
+                    android:layout_width="24dp">
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text = "마이페이지"
+                    android:fontFamily="@font/font_regular"
+                    android:textSize="12sp">
+
+                </TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
 </LinearLayout>
