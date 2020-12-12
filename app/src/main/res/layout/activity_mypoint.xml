@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="27dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/default_font"
+        android:textSize="15sp"
+        android:textColor="#444444"
+        android:text="내 포인트"></TextView>
+
+    <RelativeLayout android:layout_width="320dp"
+        android:layout_height="161dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/product_layout">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="31dp"
+                android:layout_marginLeft="44dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/default_font"
+                android:textColor="#444444"
+                android:text = "보유 포인트"></TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:layout_marginLeft="43dp">
+            <TextView
+                android:id="@+id/point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:fontFamily="@font/default_font"
+                android:textColor="@color/colorPurple"
+                android:text = "1,080"></TextView>
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:fontFamily="@font/font_regular"
+                android:textColor="#929292"
+                android:text = "점"></TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="31dp"
+            android:layout_marginBottom="36dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorGray"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="48dp"
+            android:layout_alignParentRight="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="31dp"
+
+                android:textSize="18sp"
+                android:fontFamily="@font/default_font"
+                android:textColor="#444444"
+                android:text = "보유 쿠폰"></TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="21dp">
+                <TextView
+                    android:id="@+id/coupon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/default_font"
+                    android:textColor="@color/colorPurple"
+                    android:text = "2"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_regular"
+                    android:text="장"
+                    android:textColor="#929292"
+                    android:textSize="15sp"></TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button"
+        android:text="포인트 전환하기"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/default_font"
+        android:textSize="15sp"
+        android:layout_gravity="center">
+
+    </Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:layout_marginLeft="18dp"
+        android:fontFamily="@font/default_font"
+        android:textSize="18sp"
+        android:textColor="#444444"
+        android:text="포인트 내역"></TextView>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/colorWhite"
+            android:weightSum="3"
+            android:layout_alignParentBottom = "true">
+
+            <LinearLayout
+                android:id="@+id/insurance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight = "1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+                android:clickable="true"
+                >
+                <ImageView
+                    android:src="@drawable/insurance"
+                    android:layout_marginTop="9dp"
+                    android:layout_height="24dp"
+                    android:layout_width="24dp">
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text = "보험 가입"
+                    android:fontFamily="@font/font_regular"
+                    android:textSize="12sp">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/myinsure"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight = "1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+                android:clickable="true"
+                >
+                <ImageView
+                    android:src="@drawable/myinsure"
+                    android:layout_marginTop="9dp"
+                    android:layout_height="24dp"
+                    android:layout_width="24dp">
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text = "나의 보험"
+                    android:fontFamily="@font/font_regular"
+                    android:textSize="12sp">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mypage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight = "1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+                android:clickable="true"
+                >
+                <ImageView
+                    android:src="@drawable/mypage"
+                    android:layout_marginTop="9dp"
+                    android:layout_height="24dp"
+                    android:layout_width="24dp">
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text = "마이페이지"
+                    android:fontFamily="@font/font_regular"
+                    android:textSize="12sp">
+
+                </TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

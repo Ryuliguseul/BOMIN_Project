@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"
+
+        android:fontFamily="@font/default_font"
+        android:text="나의 보험"
+
+        android:textColor="#444444"
+        android:textSize="24sp"></TextView>
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="260dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/product_layout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="77dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/edge"
+                android:fontFamily="@font/default_font"
+
+                android:gravity="center"
+                android:text="기간 내 보장"
+
+                android:textColor="@color/colorPurple"
+                android:textSize="12sp"></TextView>
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/default_font"
+                android:text="8,000원"
+                android:textColor="#444444">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/term"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_marginTop="17dp"
+                android:fontFamily="@font/font_regular"
+                android:text="/1달">
+
+            </TextView>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="52dp"
+
+            android:fontFamily="@font/default_font"
+            android:text="본인 신체 상해"
+
+            android:textColor="#444444"
+            android:textSize="15sp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="@font/font_regular"
+            android:text="상해 1급 ~ 12급까지\n보험금 최대 120만원 지급"
+
+            android:textColor="#444444"
+            android:textSize="15sp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/default_font"
+            android:text="PM 기기 보상"
+
+            android:textColor="#444444"
+            android:textSize="15sp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="@font/font_regular"
+            android:text="최대 100만원 지급"
+
+            android:textColor="#444444"
+            android:textSize="15sp"></TextView>
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/information"
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center"
+        android:background="@drawable/term_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="#444444"
+            android:fontFamily="@font/font_regular"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:text="보험의 민족 보험 안내서"></TextView>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="4dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/right"></ImageView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/termsview"
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center"
+        android:background="@drawable/term_layout">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="#444444"
+            android:fontFamily="@font/font_regular"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:text="퍼스널 모빌리티 개인간 보험 이용 약관"></TextView>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="4dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/right"></ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/accident"
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center"
+        android:background="@drawable/term_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/colorPurple"
+            android:fontFamily="@font/default_font"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:text="사고 접수"></TextView>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="4dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/right"></ImageView>
+    </RelativeLayout>
+
+    //menu
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorWhite"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/insurance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="9dp"
+                    android:src="@drawable/insurance"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/font_regular"
+                    android:text="보험 가입"
+                    android:textSize="12sp">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/my_insure"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="9dp"
+                    android:src="@drawable/myinsure"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/font_regular"
+                    android:text="나의 보험"
+                    android:textSize="12sp">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mypage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="9dp"
+                    android:src="@drawable/mypage"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/font_regular"
+                    android:text="마이페이지"
+                    android:textSize="12sp">
+
+                </TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

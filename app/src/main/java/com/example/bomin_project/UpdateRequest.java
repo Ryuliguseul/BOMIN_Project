@@ -1,5 +1,8 @@
 package com.example.bomin_project;
 
+import android.annotation.SuppressLint;
+import android.util.Log;
+
 import com.android.volley.AuthFailureError;
 import com.android.volley.Response;
 import com.android.volley.toolbox.StringRequest;
@@ -14,11 +17,13 @@ public class UpdateRequest extends StringRequest {
     private Map<String, String> map;
     //private Map<String, String>parameters;
 
+
     public UpdateRequest(String UserEmail, int CurrentProduct, Response.Listener<String> listener) {
         super(Method.POST, URL, listener, null);
 
         map = new HashMap<>();
         map.put("UserEmail", UserEmail);
+        Log.d("update current", Integer.toString(CurrentProduct));
         map.put("CurrentProduct", Integer.toString(CurrentProduct));
     }
 

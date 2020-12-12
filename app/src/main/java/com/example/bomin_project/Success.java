@@ -36,6 +36,7 @@ public class Success extends AppCompatActivity {
 
         Log.d("check", "success");
 
+
         //user info update -> current product
         Response.Listener<String> responseListener = new Response.Listener<String>() {
             @Override
@@ -52,7 +53,8 @@ public class Success extends AppCompatActivity {
             }
         };
         String email = user.getEmail();
-
+        Log.d("success email", email);
+        Log.d("success product_index", Integer.toString(product_index));
         UpdateRequest updateRequest = new UpdateRequest(email,product_index, responseListener);
         RequestQueue queue = Volley.newRequestQueue( Success.this );
         queue.add( updateRequest );

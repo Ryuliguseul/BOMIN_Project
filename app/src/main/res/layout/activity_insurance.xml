@@ -60,7 +60,7 @@
                 android:layout_marginLeft="105dp"
 
                 android:textColor = "#444444"
-                android:text="30,000원"
+                android:text="8,000원"
                 android:fontFamily="@font/default_font"
                 >
 

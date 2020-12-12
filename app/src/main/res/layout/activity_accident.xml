@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f3f3">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#444444"
+        android:textSize="24sp"
+
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+
+        android:text="사고 접수"
+        android:fontFamily="@font/default_font"
+        ></TextView>
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/term_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="#444444"
+            android:fontFamily="@font/default_font"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:text="보험금 청구서"></TextView>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="4dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/right"></ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="18dp"
+        android:layout_gravity="center"
+        android:background="@drawable/term_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="#444444"
+            android:fontFamily="@font/default_font"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:text="신분증 및 통장 사본"></TextView>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="4dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/right"></ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="18dp"
+        android:layout_gravity="center"
+        android:background="@drawable/term_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="#444444"
+            android:fontFamily="@font/default_font"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:text="초진 진료차트"></TextView>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="4dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/right"></ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="18dp"
+        android:layout_gravity="center"
+        android:background="@drawable/term_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="#444444"
+            android:fontFamily="@font/default_font"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:text="영수증"></TextView>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="4dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/right"></ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="18dp"
+        android:layout_gravity="center"
+        android:background="@drawable/term_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="#444444"
+            android:fontFamily="@font/default_font"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:text="대여 확인서"></TextView>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="4dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/right"></ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="18dp"
+        android:layout_gravity="center"
+        android:background="@drawable/term_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="#444444"
+            android:fontFamily="@font/default_font"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:text="사고 경위서"></TextView>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="4dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/right"></ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom = "true"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity = "center"
+                android:layout_marginBottom = "24dp"
+                android:gravity = "center"
+                android:textSize="15sp"
+                android:textColor="#444444"
+                android:text="본인 부담금을 제외하고 한도 내에서 치료비 지급.\n상해 12급까지 최대 보험료 120만원 지급."
+                android:fontFamily="@font/font_regular"></TextView>
+            <Button
+                android:id="@+id/join"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom = "28dp"
+                android:background="@drawable/button"
+                android:layout_gravity = "center"
+
+                android:text="가입하기"
+                android:textSize="15sp"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/default_font"></Button>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

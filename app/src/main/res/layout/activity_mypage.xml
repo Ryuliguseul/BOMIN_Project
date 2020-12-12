@@ -53,8 +53,10 @@
     </LinearLayout>
 
     <RelativeLayout
-        android:layout_width="380dp"
-        android:layout_height="86dp"
+        android:id="@+id/mysafetyscore"
+        android:clickable="true"
+        android:layout_width="370dp"
+        android:layout_height="79dp"
         android:layout_gravity="center"
         android:layout_marginTop="14dp"
         android:background="@drawable/product_layout"
@@ -63,14 +65,13 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 android:fontFamily="@font/default_font"
                 android:text="내 안전점수"
                 android:textColor="#444444"
@@ -93,15 +94,15 @@
                 android:text="/100"
                 android:textColor="#444444"
                 android:textSize="17sp"></TextView>
-            
 
 
         </LinearLayout>
+
         <ImageView
             android:layout_width="26dp"
             android:layout_height="26dp"
-            android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
             android:src="@drawable/right"></ImageView>
 
     </RelativeLayout>
@@ -166,6 +167,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/mypoint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="27dp"
@@ -217,7 +219,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="31dp"
+        android:layout_marginTop="25dp"
 
         android:fontFamily="@font/default_font"
         android:text="설정"

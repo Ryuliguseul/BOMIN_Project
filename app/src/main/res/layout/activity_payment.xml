@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
             android:layout_marginLeft="123dp"
-            android:text="30,000원"
+            android:text="8,000원"
             android:textSize="18sp"
             android:textColor="#7a2dfe"
             android:fontFamily="@font/default_font">

@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         int safety_score = Integer.parseInt(intent.getStringExtra("SafetyScore"));
         int current_product = Integer.parseInt(intent.getStringExtra("CurrentProduct"));
 
-        USER user = new USER(email, name, current_product, safety_score);
+        USER user = new USER(name, email, current_product, safety_score);
 
         Intent intent_ = new Intent(getApplicationContext(), Insurance.class);
         intent_.putExtra("User", user);

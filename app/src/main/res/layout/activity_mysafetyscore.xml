@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="27dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/default_font"
+        android:textSize="15sp"
+        android:textColor="#444444"
+        android:text="내 안전점수"></TextView>
+
+    <LinearLayout android:layout_width="320dp"
+        android:layout_height="298dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/product_layout"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <com.dinuscxj.progressbar.CircleProgressBar
+            android:id="@+id/cpb_circlebar"
+            android:layout_width="239dp"
+            android:layout_height="239dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginLeft="40dp"
+            app:progress_text_size="50sp"
+            app:progress_text_color="@color/colorPurple"
+            app:style="solid_line"
+            app:progress_stroke_width="9dp"
+            app:progress_stroke_cap="round"
+            app:progress_start_color="@color/colorPurple"
+            app:progress_end_color="@color/colorPurple"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></com.dinuscxj.progressbar.CircleProgressBar>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:layout_marginLeft="18dp"
+        android:fontFamily="@font/default_font"
+        android:textSize="18sp"
+        android:textColor="#444444"
+        android:text="라이드 내역"></TextView>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/colorWhite"
+            android:weightSum="3"
+            android:layout_alignParentBottom = "true">
+
+            <LinearLayout
+                android:id="@+id/insurance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight = "1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+                android:clickable="true"
+                >
+                <ImageView
+                    android:src="@drawable/insurance"
+                    android:layout_marginTop="9dp"
+                    android:layout_height="24dp"
+                    android:layout_width="24dp">
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text = "보험 가입"
+                    android:fontFamily="@font/font_regular"
+                    android:textSize="12sp">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/myinsure"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight = "1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+                android:clickable="true"
+                >
+                <ImageView
+                    android:src="@drawable/myinsure"
+                    android:layout_marginTop="9dp"
+                    android:layout_height="24dp"
+                    android:layout_width="24dp">
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text = "나의 보험"
+                    android:fontFamily="@font/font_regular"
+                    android:textSize="12sp">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mypage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight = "1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@color/colorWhite"
+                android:clickable="true"
+                >
+                <ImageView
+                    android:src="@drawable/mypage"
+                    android:layout_marginTop="9dp"
+                    android:layout_height="24dp"
+                    android:layout_width="24dp">
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text = "마이페이지"
+                    android:fontFamily="@font/font_regular"
+                    android:textSize="12sp">
+
+                </TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

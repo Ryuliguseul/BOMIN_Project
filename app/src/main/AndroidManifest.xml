@@ -34,6 +34,10 @@
     <activity android:name=".TermsConditions"></activity>
         <activity android:name=".Success"></activity>
         <activity android:name=".Mypage"></activity>
+        <activity android:name=".MySafetyScore"></activity>
+        <activity android:name=".Mypoint"></activity>
+        <activity android:name=".Accident"></activity>
+        <activity android:name=".Myinsure"></activity>
     </application>
 
 </manifest>
