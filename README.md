@@ -1,6 +1,4 @@
 # Bomin_project
 
 Database: "http://ryuliguseul.dothome.co.kr"  
-Login.php: "https://drive.google.com/file/d/1QbAPjbhtL67Sa-wvZTQeamL8RaLcIk6y/view?usp=sharing"  
-Register.php: "https://drive.google.com/file/d/10rKOS6V8qCLQWuLyntc_3jqtid7yR86D/view?usp=sharing"  
-UserValidate.php: "https://drive.google.com/file/d/10rKOS6V8qCLQWuLyntc_3jqtid7yR86D/view?usp=sharing"  
+PHP 및 문서 : https://drive.google.com/drive/folders/1ifNagllWfmYe8u4KvdjxWKXjgyIx-KL8?usp=sharing(CurrentProductUpdate, GetUser, Login, Product, ProductUserUpdate, Register, UserValidate, 보험 안내서, 개인정보동의
